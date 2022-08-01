@@ -1,0 +1,88 @@
+/*VARIAVEIS (ROOT PERMITE CRIAR VARIAVEIS)*/
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+/*CONFIGURACAO PRA TODA PAGINA (* DEFINE CONFIGURAÇÕES PADROES PARA TODA PAGINA)*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*CONFIGURACAO CORPO*/
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+/*DISTRIBUICAO DOS ITENS NA BARRA DE NAVEGACAO*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;   
+}
+/*LOGO NETFLIX*/
+header .logo{
+    margin-left: 10PX;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;    
+}
+/*BOTOES DE NAVEGACAO*/
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;  
+}
+/*PASSAR O MOUSE NOS BOTÕES DE NAVEGACAO*/
+header nav a:hover{
+    color: #fff;
+}
+/*FILME PRINCIPAL*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundotitans.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.filme-principal .titulo{
+    font-size: 40px;
+    margin-left: 50px;
+    font: 'Trebuchet MS';
+}
+.filme-principal .descricao{
+    width: 400px;
+    margin-top: 5px;
+}
+.filme-principal .botoes{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.filme-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+/*ANIMACAO DO BOTAO*/
+    transition: .3s ease all;
+}
+/*FUNCAO HOVER - ALTERACAO AO PASSAR O MOUSE*/
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 5px;
+}
