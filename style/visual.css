@@ -42,7 +42,7 @@ header nav a:hover{
 /*FILME PRINCIPAL*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundotitans.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/fundotitans.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -85,4 +85,12 @@ header nav a:hover{
 }
 .botao i{
     margin-right: 5px;
+}
+.box.filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    margin-top: 10PX;
 }
